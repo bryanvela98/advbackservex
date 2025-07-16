@@ -1,15 +1,15 @@
 export const getBusiness = async (req, res) => {
-  res.sent({ status: "success", message: "getBusiness" });
+  res.send({ status: "success", message: "getBusiness" });
 };
 
 export const getBusinessById = async (req, res) => {
-  res.sent({ status: "success", message: "getBusinessById" });
+  res.send({ status: "success", message: "getBusinessById" });
 };
 
 export const createBusiness = async (req, res) => {
-  res.sent({ status: "success", message: "createBusiness" });
+  res.send({ status: "success", message: "createBusiness" });
 };
 
 export const addProduct = async (req, res) => {
-  res.sent({ status: "success", message: "addProduct" });
+  res.send({ status: "success", message: "addProduct" });
 };
