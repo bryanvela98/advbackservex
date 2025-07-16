@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { createHash } from "../utils.js";
+import { createHash } from "../../utils.js";
 
 const userSchema = mongoose.Schema({
   first_name: { type: String, required: true }, // User name

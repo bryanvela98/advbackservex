@@ -1,8 +1,17 @@
 import { Router } from "express";
-import UserService from "../models/user.model.js";
+import UserService from "../dao/models/user.model.js";
 import { generateToken, isValidPassword } from "../utils.js";
+import {
+  getUsers,
+  registerUser,
+  getUserById,
+} from "../controller/user.controller.js";
 
 const router = Router();
+
+router.get("/", getUsers);
+router.get("/:uid", getUserById);
+router.post("/", registerUser);
 
 //User registration
 router.post("/register", async (req, res) => {
