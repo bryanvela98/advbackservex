@@ -3,6 +3,7 @@ import config from "./config/config.js";
 import { __dirname } from "./utils.js";
 import cookieParser from "cookie-parser";
 import connectDB from "./config/db.config.js";
+import cors from "cors";
 
 //Importing routers
 import userRouter from "./routes/user.router.js";
@@ -15,6 +16,8 @@ const COOKIE_FIRM = config.COOKIE_FIRM;
 
 const app = express();
 const connection = connectDB(URL_MONGO);
+
+app.use(cors());
 
 //Server config
 app.use(express.json());

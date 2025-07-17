@@ -15,7 +15,7 @@ export const getBusinessById = async (req, res) => {
 
 export const createBusiness = async (req, res) => {
   const business = req.body; //Las validaciones las dejamos para después
-  let result = await businessService.createBusiness(business);
+  let result = await businessService.registerBusiness(business);
   if (!result)
     return res.status(500).send({
       status: "error",

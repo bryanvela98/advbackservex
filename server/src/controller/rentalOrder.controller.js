@@ -44,7 +44,7 @@ export const createRentalOrder = async (req, res) => {
     totalPrice: totalPrice,
     status: "Pending",
   };
-  let resultRentalOrder = await rentalOrderService.createRentalOrder(
+  let resultRentalOrder = await rentalOrderService.registerRentalOrder(
     rentalOrder
   );
 
