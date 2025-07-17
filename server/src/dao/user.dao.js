@@ -13,7 +13,7 @@ export default class UserDao {
 
   getUserById = async (id) => {
     try {
-      let user = await userModel.fiendOne({ _id: id });
+      let user = await userModel.findOne({ _id: id });
       return user;
     } catch (error) {
       console.log(error);

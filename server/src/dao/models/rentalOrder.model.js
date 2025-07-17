@@ -13,7 +13,7 @@ const rentalOrderSchema = new mongoose.Schema({
     type: mongoose.SchemaTypes.ObjectId,
     ref: "user",
   },
-  equipment: [],
+  products: [],
   totalPrice: Number,
   status: String, //Field to cancel or complete an rental order
 });

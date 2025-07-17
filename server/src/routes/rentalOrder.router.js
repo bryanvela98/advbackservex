@@ -11,6 +11,6 @@ const router = Router();
 router.get("/", getRentalOrders);
 router.get("/:oid", getRentalOrderById);
 router.post("/", createRentalOrder);
-router.post("/", resolveRentalOrder);
+router.post("/:oid", resolveRentalOrder);
 
 export default router;
